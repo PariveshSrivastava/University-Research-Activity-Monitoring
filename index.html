@@ -7,34 +7,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basics</title>
+    <title>Research Portal</title>
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
 </head>
 
 <body class="" background="">
-    <nav class="border-b border-emerald-400 flex justify-between">
-        <div class="flex items-center">
-            <span class="text-3xl cursor-pointer mx-4 my-3 text-inherit text-teal-500">
-                <!-- <img class="h-10 inline"
-                <!-- src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg"> -->
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a href="index.html">
-                    Research Portal
-                </a>
-            </span>
+    <!-- <nav class="border-b border-emerald-400 flex justify-between">
+        <div class="container m-auto flex items-center between">
+            <div class="flex justify-start">
+                <span class="text-3xl cursor-pointer mx-4 my-3 text-inherit text-teal-500">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="index.html">
+                        Research Portal
+                    </a>
+                </span>
+                <div class = "ml-5 my-5 text-md text-gray-400 hover:text-teal-400 ">
+                    <a href="accessData.html">
+                        Access data
+                    </a>
+                </div>
+            </div>
+            <div class = "flex justify-end">
+                <ul class="flex py-3 ">
+                    <li class=" mx-2 my-3">
+                        <a href="signIn.html"
+                            class="bg-teal-500 hover:bg-teal-400 text-white px-3 py-2 rounded-full text-md font-medium shadow hover:shadow-md focus:outline-none duration-300"
+                            aria-current="page">Sign In</a>
+                    </li>
+                    <li class="mx-4 my-3">
+                        <a href="signUp.html"
+                            class="bg-teal-500 hover:bg-teal-400 text-white px-3 py-2 rounded-full text-md font-medium shadow hover:shadow-md focus:outline-none duration-300"
+                            aria-current="page">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="flex py-3 ">
-            <li class=" mx-2 my-3">
-                <a href="signIn.html"
-                    class="bg-teal-500 hover:bg-teal-400 text-white px-3 py-2 rounded-full text-md font-medium shadow hover:shadow-md focus:outline-none"
-                    aria-current="page">Sign In</a>
-            </li>
-            <li class="mx-4 my-3">
-                <a href="signUp.html"
-                    class="bg-teal-500 hover:bg-teal-400 text-white px-3 py-2 rounded-full text-md font-medium shadow hover:shadow-md focus:outline-none"
-                    aria-current="page">Sign Up</a>
-            </li>
-        </ul>
-    </nav>
+    </nav> -->
+
+    <div class="antialiased bg-gray-400">
+        <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 border-b border-emerald-400">
+            <div class="flex-1 flex justify-between items-center">
+                <span class="text-3xl cursor-pointer mx-4 my-5 text-inherit text-teal-500">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="index.html">
+                        Research Portal
+                    </a>
+                </span>
+            </div>
+
+            <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900"
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>/
+                </svg></label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+
+            <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+                <nav>
+                    <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+                        <li class="lg:p-4 py-3 px-0 block lg:mb-0 mb-2">
+                            <a href="accessData.html" class="hover:text-teal-400"> Access data</a>
+                        </li>
+                        <li class="lg:p-4 py-3 px-0 block lg:mb-0 mb-2">
+                            <a href="signIn.html"
+                                class="bg-teal-500 hover:bg-teal-400 text-white px-3 py-2 rounded-full text-md font-medium shadow hover:shadow-md focus:outline-none "
+                                aria-current="page">Sign In</a>
+                        </li>
+                        <li class="lg:p-4 py-3 px-0 block lg:mb-0 mb-2">
+                            <a href="signUp.html"
+                                class="bg-teal-500 hover:bg-teal-400 text-white px-3 py-2 rounded-full text-md font-medium shadow hover:shadow-md focus:outline-none"
+                                aria-current="page">Sign Up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
     <!-- <div class="w-3/4 bg-zinc-400 rounded-r-2xl" >
         <p class = "text-4xl text-center font-medium pt-1/3">
             <img src = "research.webp" class="h-96 pl-200">
@@ -46,9 +99,9 @@
         </p>
     </div> -->
 
-    <div class="flex justify-between mt-10 mx-40">
+    <div class="flex justify-center mt-10">
         <div>
-            <p class="text-4xl text-left font-medium pt-1/3 mx-4">
+            <p class="text-4xl lg:text-left  font-medium pt-1/3 mx-10">
                 Discover scientific knowledge
             </p>
             <p class="text-center mx-4">
@@ -59,7 +112,8 @@
                     <div class="absolute top-4 left-3">
                         <i class="mr-2 fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
                     </div>
-                    <input type="text" class="h-14 pl-10 pr-20 rounded-full z-0 shadow focus:shadow-md focus:outline-none"
+                    <input type="text"
+                        class="h-14 pl-10 pr-20 rounded-full z-0 shadow focus:shadow-md focus:outline-none"
                         placeholder="Search">
                     <div class="absolute top-2 right-2">
                         <button class="h-10 w-20 text-white rounded-full bg-teal-500 hover:bg-teal-400">Search</button>
@@ -67,18 +121,11 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="h-6"></div> -->
-        <img src="research.webp" class="h-96 rounded-lg">
-
-
+        <div class="collapse lg:visible">
+            <img src="research.webp" class="h-96 rounded-lg">
+        </div>
     </div>
-
-    <!-- footer -->
-
-
-
-    <script>
-    </script>
+    <script src="script.js"></script>
 
 </body>
 

@@ -1,15 +1,27 @@
 {
   "name": "project-school-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "---\r ### Description:\r  Developing a portal where information about all academic activities across the country, universities and international arena in chronological order and in subject areas so as to enable the students, faculty, and researchers to access information and prepare well in advance.",
   "main": "index.js",
   "scripts": {
-    "str": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "startTailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "startLive": "lite-server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Parivesh",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
-  }
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PariveshSrivastava/University-Research-Activity-Monitoring.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PariveshSrivastava/University-Research-Activity-Monitoring/issues"
+  },
+  "homepage": "https://github.com/PariveshSrivastava/University-Research-Activity-Monitoring#readme"
 }

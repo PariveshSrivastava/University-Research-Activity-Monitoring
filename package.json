@@ -2,7 +2,7 @@
   "name": "project-school-site",
   "version": "1.0.0",
   "description": "---\r ### Description:\r  Developing a portal where information about all academic activities across the country, universities and international arena in chronological order and in subject areas so as to enable the students, faculty, and researchers to access information and prepare well in advance.",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "startTailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "startLive": "lite-server"

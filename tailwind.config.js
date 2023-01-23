@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
-  content: ["*"],
+  content: ["**/*"],
   theme: {
     extend: {
       colors: {
@@ -45,7 +45,7 @@ module.exports = {
       },
       padding: {
         '1/2': '50%',
-        '1/3': '26.5%',
+        '53/200': '26.5%',
         '1/6': '10%',
         full: '100%',
       },
